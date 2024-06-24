@@ -11,7 +11,11 @@ from constants import (
 
 def generate_a_number(start_range=DEFAULT_START_RANGE, end_range=DEFAULT_END_RANGE):
     """Generates a random number between start_range and end_range."""
-    return random.randint(start_range, end_range)
+    random_number = random.randint(start_range, end_range)
+    print(
+        f"I have generated a number between {start_range} and {end_range}. Try to guess it!"
+    )
+    return random_number
 
 
 def guess_the_number(prompt):
